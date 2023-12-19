@@ -6,6 +6,18 @@
 </div>
 <!--***********************************************************************************************************-->
 <div class="container">
-  <ngb-rating [max]="5" [(rate)]="currentRate" [readonly]="false"></ngb-rating>
+  <ngb-rating [max]="5" [(rate)]="currentRate" [readonly]="false" (rateChange)="onRateChange()"></ngb-rating>
   <p>Rate: {{currentRate}}</p>
 </div>
+
+<div>
+  <h2>Statistiques des étoiles</h2>
+  <ul>
+    <li>Nombre de 1 étoile: {{ ratingsCount[0] }}</li>
+    <li>Nombre de 2 étoiles: {{ ratingsCount[1] }}</li>
+    <li>Nombre de 3 étoiles: {{ ratingsCount[2] }}</li>
+    <li>Nombre de 4 étoiles: {{ ratingsCount[3] }}</li>
+    <li>Nombre de 5 étoiles: {{ ratingsCount[4] }}</li>
+  </ul>
+</div>
+<!--***********************************************************************************************************-->

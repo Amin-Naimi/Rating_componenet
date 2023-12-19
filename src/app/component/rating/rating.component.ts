@@ -20,6 +20,16 @@ export class RatingComponent {
 /***********************************************************************************************************************/
 /*exemple2*/
   currentRate=0;
+
+  ratingsCount: number[] = [0, 0, 0, 0, 0]; // Tableau pour stocker les nombres d'étoiles
+
+  onRateChange() {
+    // Incrémentez le nombre d'étoiles correspondant
+    this.ratingsCount[this.currentRate - 1]++;
+    console.log(`Nombre d'étoiles ${this.currentRate}: ${this.ratingsCount[this.currentRate - 1]}`);
+  }
   
+/***********************************************************************************************************************/
+/*Testin bars**/
 
 }
