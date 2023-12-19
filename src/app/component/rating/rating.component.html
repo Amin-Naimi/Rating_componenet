@@ -1,1 +1,6 @@
-<p>rating works!</p>
+<!--La balise <ng-container> est utilisée comme conteneur temporaire qui n'est pas rendu dans le DOM final.-->
+<div class="rating">
+  <ng-container *ngFor="let i of stars">
+    <i class="fa-solid fa-star" (click)="updateRating(i)" [ngClass]="{'active': i<=initialRating}"></i>
+  </ng-container>
+</div>

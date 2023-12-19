@@ -1,0 +1,16 @@
+.rating{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 40px;
+}
+i{
+  color: #8080806b;
+  cursor: pointer;
+}
+i:hover{
+  color: orange;
+}
+.active{
+  color: orange;
+}
