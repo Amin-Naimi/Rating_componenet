@@ -19,5 +19,15 @@
     <li>Nombre de 4 étoiles: {{ ratingsCount[3] }}</li>
     <li>Nombre de 5 étoiles: {{ ratingsCount[4] }}</li>
   </ul>
+  
+  <!-- Ajoutez les barres horizontales ici -->
+  <div class="star-bars">
+    <div class="star-bar" [style.width.%]="(ratingsCount[0] / getTotalRatings()) * 100"></div>
+    <div class="star-bar" [style.width.%]="(ratingsCount[1] / getTotalRatings()) * 100"></div>
+    <div class="star-bar" [style.width.%]="(ratingsCount[2] / getTotalRatings()) * 100"></div>
+    <div class="star-bar" [style.width.%]="(ratingsCount[3] / getTotalRatings()) * 100"></div>
+    <div class="star-bar" [style.width.%]="(ratingsCount[4] / getTotalRatings()) * 100"></div>
+  </div>
 </div>
+
 <!--***********************************************************************************************************-->

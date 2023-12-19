@@ -22,3 +22,14 @@ ngb-rating
   font-size: 50px;
 }
 /********************************************************************************/
+.star-bars {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.star-bar {
+  height: 20px;
+  background-color: #ccc;
+  margin-right: 5px;
+}
