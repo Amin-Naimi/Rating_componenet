@@ -17,6 +17,9 @@ export class RatingComponent {
     this.initialRating=rate;
     console.log(this.initialRating);
   }
-
+/***********************************************************************************************************************/
+/*exemple2*/
+  currentRate=0;
+  
 
 }

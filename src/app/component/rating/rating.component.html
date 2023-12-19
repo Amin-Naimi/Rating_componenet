@@ -4,3 +4,8 @@
     <i class="fa-solid fa-star" (click)="updateRating(i)" [ngClass]="{'active': i<=initialRating}"></i>
   </ng-container>
 </div>
+<!--***********************************************************************************************************-->
+<div class="container">
+  <ngb-rating [max]="5" [(rate)]="currentRate" [readonly]="false"></ngb-rating>
+  <p>Rate: {{currentRate}}</p>
+</div>
